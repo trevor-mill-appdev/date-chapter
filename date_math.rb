@@ -5,3 +5,12 @@
 # Output:
 #   "Ruby is 108937 days old!"
 #
+require "date"
+
+t = Date.today
+r = Date.parse("December 21, 1995")
+# p t
+# p r
+delta = t - r
+delta = delta.to_i
+p "Ruby is #{delta} days old!"
